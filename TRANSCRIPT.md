@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*34 user turns. Tool outputs and reasoning omitted.*
+*35 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -537,5 +537,27 @@ nothing
 I wrote this into the Part 3 slot "What you changed in your rule": nothing
 
 Next, compare your two figures with Figures 1 and 2 of the paper, which the README links. What do your two curves show against them? Talk about direction, not size. One or two sentences are enough.
+
+**User:**
+My two curves follow the predictions and reuslts as the paper, because it shows that unpredictibility increases as social influence increases,and so does the Gini coefficient
+
+**Claude:**
+- 🔧 `Edit` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 3 slot "What the two curves show against the paper's Figures 1 and 2": My two curves follow the predictions and reuslts as the paper, because it shows that unpredictibility increases as social influence increases,and so does the Gini coefficient
+
+```
+Your Part 0 predictions, as WRITEUP.md has them:
+  1. Once people can see the counts, which artist wins most often?
+      Taylor Swift
+  2. Does inequality rise or fall with social influence?
+      Rise
+  3. Does the best artist ever lose a world?
+      Yes
+  4. Can a recommender lower inequality without lowering fidelity to true taste?
+      No
+```
+
+Which of these would you change now, and why?
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
