@@ -42,19 +42,19 @@ Code: `recommender.py`, `part2_recommender.py`. Figure: `figures/part2_strip.png
 Code: `my_choice.py`, `hand_check.py`, `part3_influence.py`. Figures: `figures/part3_gini.png`,
 `figures/part3_unpredictability.png`.
 
-**Your rule in your words:** XXXX
+**Your rule in your words:** My own rule is that all of the levels have an even amount of boost which increases as you increase levels
 
-**Hand check, before the table: which artist your rule should favor, and by a little or a lot:** XXXX
+**Hand check, before the table: which artist your rule should favor, and by a little or a lot:** i should favor bruno by a little
 
-**Hand check: whether the table matched what you said:** XXXX
+**Hand check: whether the table matched what you said:** yes
 
-**The shape you expect the two curves to have, as you told Claude before the run:** XXXX
+**The shape you expect the two curves to have, as you told Claude before the run:** the shape I expect the two curves to be at is increasing
 
-**What you changed in your rule, at the hand check or after the run, or "nothing":** XXXX
+**What you changed in your rule, at the hand check or after the run, or "nothing":** nothing
 
-**What the two curves show against the paper's Figures 1 and 2, in one or two sentences:** XXXX
+**What the two curves show against the paper's Figures 1 and 2, in one or two sentences:** My two curves follow the predictions and reuslts as the paper, because it shows that unpredictibility increases as social influence increases,and so does the Gini coefficient
 
-**Revisited: which of your Part 0 predictions you would now change, and why:** XXXX
+**Revisited: which of your Part 0 predictions you would now change, and why:** i would not change any of these. i would keep all of them because from the results they match my intuition
 
 ## Part 4. Your recommender
 
