@@ -31,11 +31,11 @@ Code: `part1_independent.py`. Figure: `figures/part1_strip.png`.
 
 Code: `recommender.py`, `part2_recommender.py`. Figure: `figures/part2_strip.png`.
 
-**The capabilities and limitations of `top_five`, in your words:** XXXX
+**The capabilities and limitations of `top_five`, in your words:** It shows the top five most downloaded artists, but its limiations include that it includes random artists UNTIL the list is full
 
-**What Claude corrected in your reading, in your words, or "nothing":** XXXX
+**What Claude corrected in your reading, in your words, or "nothing":** Claude added the other part of the functions definition where an artist outside them is never shown again.
 
-**What changed against Part 1, one sentence:** XXXX
+**What changed against Part 1, one sentence:** The thing that changed is the true popularity/total true popularity is alot lower than the data points in the part 2 than part 1
 
 ## Part 3. Social influence
 
