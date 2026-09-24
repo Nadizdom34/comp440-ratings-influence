@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*4 user turns. Tool outputs and reasoning omitted.*
+*5 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -88,5 +88,47 @@ I'll commit the predictions once all four are in. Please answer the other three.
 - 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Bash` — Commit the Part 0 predictions
 - 🔧 `Bash` — Run Part 1, users choosing independently
+I wrote your answers into the Part 0 slots for questions 2 to 4: Rise, Yes, No. All four predictions are committed as `Part 0 predictions`.
+
+**Part 1** is next: users choose on their own, without seeing any counts.
+
+```
+random_five, social influence 0, 300 worlds:
+  mean Gini          0.277   inequality within a world
+  unpredictability   0.010   how much an artist's share differs between worlds
+  fidelity           0.976   rank correlation of shares with true popularity
+  true best wins     0.590   fraction of worlds the Beatles finish strictly first
+  accidental hits    0.000   fraction of worlds won by true popularity 30 or less
+
+World 0, each artist's share of the world's downloads:
+  Beatles        0.142
+  Taylor Swift   0.159
+  Mariah Carey   0.108
+  Drake          0.115
+  Katy Perry     0.134
+  Bruno Mars     0.084
+  Justin Bieber  0.102
+  Cher           0.047
+  Bon Jovi       0.041
+  Miles Davis    0.040
+  John Coltrane  0.028
+
+Saved figures/part1_strip.png
+```
+
+The strip plot in `figures/part1_strip.png` has one column per artist and one dot per world. A diamond marks each artist's true share.
+
+In your own words, what does Gini show, and what does unpredictability show? The README section "The measures" defines both, and one sentence each is enough.
+
+**User:**
+Gini demonstrates the inequality for the artists, so how popular/unpopular compared to other. Unpredictability shows how likely that artist is to be popular within a world.
+
+**Claude:**
+- 🔧 `Bash` — Show the Part 1 slots
+- 🔧 `Edit` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 1 slot "What Gini and unpredictability each show": Gini demonstrates the inequality for the artists, so how popular/unpopular compared to other. Unpredictability shows how likely that artist is to be popular within a world.
+
+Next, open `figures/part1_strip.png`. What does the figure show? One sentence is enough.
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
