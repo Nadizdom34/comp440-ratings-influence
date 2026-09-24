@@ -68,9 +68,9 @@ Code: `my_recommender.py`, `part4_recommender.py`. Figure: `figures/part4_recomm
 
 ## Part 5. Reflection
 
-**Where this shows up in data you have already handled, or in an interface you use, one sentence:** XXXX
+**Where this shows up in data you have already handled, or in an interface you use, one sentence:** I think the popular on netflix, because if a movie is already being ranke dpopular by other users, than maybe I am more liekly to click on it because of what another user thought about it being great.
 
-**A moment Claude was wrong or overconfident, or a judgment you kept for yourself, one sentence:** XXXX
+**A moment Claude was wrong or overconfident, or a judgment you kept for yourself, one sentence:** A moment were claude was overconfident was when trying to figure out my rules and correct me
 
 ## Follow-ups
 
