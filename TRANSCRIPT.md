@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*39 user turns. Tool outputs and reasoning omitted.*
+*40 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -591,5 +591,13 @@ Before any code: what is your recommender rule, in words? One or two sentences a
 
 **User:**
 remind me my recommender ruel?
+
+**Claude:**
+You haven't made a recommender rule yet, so this is a new design. The rule from Part 3 was your choice rule, which decides how a user picks from the five artists shown. Part 4 is about the step before that: which five artists the user sees, and which counts are shown with them.
+
+Here's a question to start from. What would you change about which artists `top_five` shows, or about the counts it shows with them?
+
+**User:**
+i would chanfge whih artists it shows, and for it not to allow random artists to be shown
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
