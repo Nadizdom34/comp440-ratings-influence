@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*30 user turns. Tool outputs and reasoning omitted.*
+*31 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -463,5 +463,57 @@ the shape I expect the two curves to be at is increasing
 - 🔧 `Edit` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Bash` — Run the Part 3 social influence sweep
 - 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 3 slot "The shape you expect the two curves to have": the shape I expect the two curves to be at is increasing
+
+Here is the Part 3 run:
+
+```
+The independent control (random_five, social influence 0), then top_five at each level; 300 worlds per row:
+                       Gini  unpredictability  fidelity  true best wins  accidental hits
+independent control    0.277             0.010     0.976           0.590            0.000
+social influence 0.0   0.687             0.086     0.504           0.533            0.000
+social influence 0.25  0.696             0.092     0.468           0.400            0.000
+social influence 0.5   0.708             0.097     0.456           0.400            0.000
+social influence 0.75  0.722             0.103     0.465           0.267            0.007
+social influence 1.0   0.741             0.120     0.372           0.170            0.123
+
+Saved figures/part3_gini.png and figures/part3_unpredictability.png
+
+Your Part 0 predictions, as WRITEUP.md has them:
+  1. Once people can see the counts, which artist wins most often?
+      Taylor Swift
+  2. Does inequality rise or fall with social influence?
+      Rise
+  3. Does the best artist ever lose a world?
+      Yes
+  4. Can a recommender lower inequality without lowering fidelity to true taste?
+      No
+```
+
+`figures/part3_gini.png` plots Gini against social influence, and `figures/part3_unpredictability.png` plots unpredictability against it. A square in each figure marks the independent control.
+
+A question about your rule: at social influence 0, does your rule give the same numbers as Part 2?
+
+**User:**
+i cant see the resultof part 2
+
+**Claude:**
+Here is the Part 2 output from earlier, copied exactly:
+
+```
+The users are the same as in Part 1: they ignore the download counts and pick by true
+popularity alone. Only the artists they are shown changed.
+
+top_five, social influence 0, 300 worlds:
+  mean Gini          0.638   inequality within a world
+  unpredictability   0.086   how much an artist's share differs between worlds
+  fidelity           0.503   rank correlation of shares with true popularity
+  true best wins     0.570   fraction of worlds the Beatles finish strictly first
+  accidental hits    0.000   fraction of worlds won by true popularity 30 or less
+
+Artists with any download in world 0: 5 of 11
+```
+
+Compare it with the `social influence 0.0` row of the Part 3 table. At social influence 0, does your rule give the same numbers as Part 2?
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
