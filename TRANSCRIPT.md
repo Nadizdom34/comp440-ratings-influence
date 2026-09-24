@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*23 user turns. Tool outputs and reasoning omitted.*
+*24 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -333,5 +333,8 @@ it should get stronger as social influence rises
 
 **Claude:**
 How strong should the boost be at level 0, and how strong at level 1? For example, give a fraction of your 40, 30, 20 and 10 percent steps for each level. A few words are enough.
+
+**User:**
+10 and then 40
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
