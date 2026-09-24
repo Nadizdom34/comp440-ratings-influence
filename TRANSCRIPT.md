@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*2 user turns. Tool outputs and reasoning omitted.*
+*3 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -51,5 +51,33 @@ Nadezhda Dominguez Salinas
 **Claude:**
 - 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Bash` — Fill name and date, then commit
+I filled in your name and today's date at the top of `WRITEUP.md` and committed them as `Name and date`:
+
+```
+**Name:** Nadezhda Dominguez Salinas
+**Date:** 2026-09-24
+a8c6718 Name and date
+```
+
+Setup is done, and Part 0 is next. Please answer these four questions. A guess is fine, and a word or a line each is enough:
+
+1. Once people can see the download counts, which artist ends up with the most downloads in most worlds?
+2. As people pay more attention to the counts, does inequality between the artists rise or fall?
+3. Does the best artist (true popularity 100) ever lose a world?
+4. Can a recommender rule lower inequality without making the outcome track true taste less well?
+
+**User:**
+1. Taylor Swift
+
+**Claude:**
+- 🔧 `Edit` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 0 slot for question 1: Taylor Swift
+
+I'll commit the predictions once all four are in. Please answer the other three. A word or a line each is enough:
+
+2. As people pay more attention to the counts, does inequality between the artists rise or fall?
+3. Does the best artist (true popularity 100) ever lose a world?
+4. Can a recommender rule lower inequality without making the outcome track true taste less well?
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
