@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*16 user turns. Tool outputs and reasoning omitted.*
+*17 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -291,5 +291,8 @@ the counts part should assign it an arbitrary download
 
 **Claude:**
 Should that pretend download go to all five shown artists equally, or to just one of them picked at random? A word is enough.
+
+**User:**
+it should go to one pciked at random to have a control artist and then create the other ranking from that one whicb was chosen
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
