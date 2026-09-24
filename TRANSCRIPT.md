@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*46 user turns. Tool outputs and reasoning omitted.*
+*47 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -647,5 +647,42 @@ it would most likely increase inequality and the others
 - 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Edit` — /Users/logan/Documents/GitHub/comp440-ratings-influence/my_recommender.py
 - 🔧 `Bash` — Run Part 4 comparing the recommenders
+I wrote this into the Part 4 slot "What you expect it to do": it would most likely increase inequality and the others
+
+Here is `my_recommender()`, written from your description:
+
+```python
+from sim import ARTISTS, NUM_SHOWN
+
+def my_recommender(counts, rng):
+    shown = sorted(counts, key=lambda artist: counts[artist], reverse=True)[:NUM_SHOWN]
+    for artist in sorted(ARTISTS):   # fewer than five with a download: fill alphabetically
+        if len(shown) == NUM_SHOWN:
+            break
+        if artist not in shown:
+            shown.append(artist)
+    return shown, counts
+```
+
+It shows the most downloaded artists first, fills any empty spots in alphabetical order, and shows the real counts. Here is the run:
+
+```
+Each recommender at social influence 0.5; 300 worlds per row:
+                Gini  unpredictability  fidelity  true best wins  accidental hits
+my_recommender  0.736             0.020     0.234           0.913            0.000
+top_five        0.708             0.099     0.442           0.350            0.000
+random_five     0.265             0.013     0.959           0.527            0.000
+
+Saved figures/part4_recommenders.png
+```
+
+What did your rule gain, and what did it cost? One sentence is enough.
+
+**User:**
+my rule gained to lower fidelity and up true best wins
+
+**Claude:**
+- 🔧 `Edit` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
