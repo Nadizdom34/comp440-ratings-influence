@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*12 user turns. Tool outputs and reasoning omitted.*
+*13 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -267,5 +267,8 @@ Committed as `Part 2 done` (`cb6d84b`).
 Thanks. A few answers leave the code open, so I'll ask about them one at a time.
 
 First, `social_influence`. Part 3 runs your rule at five levels: 0, 0.25, 0.5, 0.75 and 1. Your answer gave one fixed number, 0.7. How should the level change the mix? For example, at level 0.5, how much of a user's pick should come from the counts and how much from their own taste? One line is enough.
+
+**User:**
+it should come from 0.25
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
