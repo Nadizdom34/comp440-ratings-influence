@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*42 user turns. Tool outputs and reasoning omitted.*
+*43 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -615,5 +615,8 @@ alphabetical order
 
 **Claude:**
 Fill with the artists in alphabetical order. Once five or more artists have a download, which five should it show, and in what order? One line is enough.
+
+**User:**
+it should show the top downloaded ones
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
