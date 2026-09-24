@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*9 user turns. Tool outputs and reasoning omitted.*
+*10 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -211,5 +211,38 @@ Claude added the other part of the functions definition where an artist outside 
 - 🔧 `Edit` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Bash` — Run Part 2 with the top_five recommender
 - 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 2 slot "What Claude corrected": Claude added the other part of the functions definition where an artist outside them is never shown again.
+
+Here is the Part 2 run:
+
+```
+The users are the same as in Part 1: they ignore the download counts and pick by true
+popularity alone. Only the artists they are shown changed.
+
+top_five, social influence 0, 300 worlds:
+  mean Gini          0.638   inequality within a world
+  unpredictability   0.086   how much an artist's share differs between worlds
+  fidelity           0.503   rank correlation of shares with true popularity
+  true best wins     0.570   fraction of worlds the Beatles finish strictly first
+  accidental hits    0.000   fraction of worlds won by true popularity 30 or less
+
+Artists with any download in world 0: 5 of 11
+
+Saved figures/part2_strip.png
+```
+
+The figure `figures/part2_strip.png` has the same layout as in Part 1: one column per artist, one dot per world, and a diamond at the artist's true share.
+
+What changed compared with Part 1? One sentence is enough.
+
+**User:**
+The thing that changed is the true popularity/total true popularity is alot lower than the data points in the part 2 than part 1
+
+**Claude:**
+- 🔧 `Edit` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 2 slot "What changed against Part 1": The thing that changed is the true popularity/total true popularity is alot lower than the data points in the part 2 than part 1
+
+Part 2 is complete: part2_recommender.py ran, figures/part2_strip.png drawn, and your words are in "The capabilities and limitations of `top_five`", "What Claude corrected" and "What changed against Part 1". Ready to commit?
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
