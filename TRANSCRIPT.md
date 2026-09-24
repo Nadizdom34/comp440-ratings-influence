@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*41 user turns. Tool outputs and reasoning omitted.*
+*42 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -609,5 +609,11 @@ i think it should be chonrological order of song release should fill the rest of
 **Claude:**
 - 🔧 `Bash` — Read the artists, recommender template and README Part 4
 The model has no release dates. A recommender can only use the download counts so far and the list of eleven artists, which is in a fixed order in `artists.py`. With only that to go on, what should fill the rest of the list at the start of a world? One line is enough.
+
+**User:**
+alphabetical order
+
+**Claude:**
+Fill with the artists in alphabetical order. Once five or more artists have a download, which five should it show, and in what order? One line is enough.
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
