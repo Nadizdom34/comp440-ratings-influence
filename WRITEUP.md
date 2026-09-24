@@ -60,11 +60,11 @@ Code: `my_choice.py`, `hand_check.py`, `part3_influence.py`. Figures: `figures/p
 
 Code: `my_recommender.py`, `part4_recommender.py`. Figure: `figures/part4_recommenders.png`.
 
-**Your rule in words, before any code:** XXXX
+**Your rule in words, before any code:** My rule is that if there are less than five artists, than the rest of the slots will be filled in alphabetical order, otherwise popularity by download count will dictate order.
 
-**What you expect it to do to inequality, unpredictability and fidelity, as you told Claude before the run:** XXXX
+**What you expect it to do to inequality, unpredictability and fidelity, as you told Claude before the run:** it would most likely increase inequality and the others
 
-**What it bought and what it cost, one sentence:** XXXX
+**What it bought and what it cost, one sentence:** my rule gained to lower fidelity and up true best wins
 
 ## Part 5. Reflection
 
