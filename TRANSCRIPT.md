@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*15 user turns. Tool outputs and reasoning omitted.*
+*16 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -282,5 +282,14 @@ Next, the counts. You said a user should favor artists with more downloads, a bi
 
 **User:**
 twice the amount not more than twice
+
+**Claude:**
+Next, one case your answers don't cover yet. For the first user in every world, none of the five shown artists has a download. What should the counts part do then? One line is enough.
+
+**User:**
+the counts part should assign it an arbitrary download
+
+**Claude:**
+Should that pretend download go to all five shown artists equally, or to just one of them picked at random? A word is enough.
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
