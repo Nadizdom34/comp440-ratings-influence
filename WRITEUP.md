@@ -4,8 +4,8 @@ Claude writes your answers into the slots below as you say them. You may ask it 
 your answers at any time, except the Part 0 predictions. Every `XXXX` in Parts 0 to 5 needs an
 answer; the follow-up slots at the end are optional.
 
-**Name:** XXXX
-**Date:** XXXX
+**Name:** Nadezhda Dominguez Salinas
+**Date:** 2026-09-24
 
 ## Part 0. Predictions
 
