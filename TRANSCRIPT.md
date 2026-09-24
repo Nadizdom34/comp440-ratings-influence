@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*51 user turns. Tool outputs and reasoning omitted.*
+*52 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -735,5 +735,54 @@ I would like to go striaght to submitting
 **Claude:**
 - 🔧 `Skill` — checkpoint
 - 🔧 `Bash` — Run all parts and list anything missing
+- 🔧 `Bash` — Dump transcript and check commits and blank slots
+Here is the `run_all.py` output:
+
+```
+measures.py self-check: passed
+part 1: ran, 3.6 s
+part 2: ran, 3.3 s
+part 3: ran, 20.5 s
+part 4: ran, 10.9 s
+follow-ups: optional, and not run here; ask Claude for one if you want it
+
+== what is missing ==
+  follow-up slot, not counted: What is shown (`followup_shown.py`): which market moved success further from quality
+  follow-up slot, not counted: One assumption (`followup_assumption.py`): the assumption you changed
+  follow-up slot, not counted: One assumption: whether the Part 3 conclusion survived
+  follow-up slot, not counted: Anything else you tried
+  follow-up slot, not counted: Anything else: what it showed
+  nothing, in the parts that count so far.
+
+0 missing in the parts that count so far.
+
+When your work is pushed, submit the form, select "activity", and paste your repo's GitHub URL:
+https://forms.gle/mgKcnqzTGxNaGvteA
+```
+
+The only slots still blank are the follow-ups, and those don't count. The transcript check:
+
+```
+1 session(s) found; this session in TRANSCRIPT.md: yes.
+```
+
+Other checks:
+- Nothing is uncommitted.
+- `Part 0 predictions` comes before every `Part N done` commit.
+- Parts 0 to 5 of `WRITEUP.md` have no `XXXX` left.
+
+Should I push your work to GitHub?
+
+**User:**
+ok so is everything filled in and compelted?
+
+**Claude:**
+Yes, everything that counts is complete:
+
+- Every slot in Parts 0 to 5 is filled in.
+- Every part is committed, and `run_all.py` reports 0 missing.
+- Only the optional follow-up slots are blank, and they aren't graded.
+
+It isn't on GitHub yet, though. The next step is `git push`, then the form. Should I push?
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
