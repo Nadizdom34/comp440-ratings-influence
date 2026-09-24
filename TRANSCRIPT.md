@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*7 user turns. Tool outputs and reasoning omitted.*
+*8 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -143,5 +143,65 @@ Part 1 is complete: part1_independent.py ran, figures/part1_strip.png drawn, and
 
 **User:**
 yes
+
+**Claude:**
+- 🔧 `Bash` — Commit Part 1 and show the recommender code
+Committed as `Part 1 done` (`4f64995`).
+
+**Part 2** looks at the recommender. Here is `recommender.py`:
+
+```python
+"""
+A recommender maps the world's download counts so far to two things: the five artists a user is
+shown, in display order, and the download counts shown with them. Position 0 is the top of the
+list. The choice rule sees only what the recommender shows.
+"""
+
+from sim import ARTISTS, NUM_SHOWN
+
+
+def top_five(counts, rng):
+    """The shipped recommender: the five most downloaded artists, most downloaded first.
+
+    `counts` lists only artists with a download, in the order of their first download, and
+    ties keep that order. Until five artists have a download, random artists fill the list.
+    It shows the real download counts with the artists, so it returns `counts` unchanged.
+    """
+    shown = sorted(counts, key=lambda artist: counts[artist], reverse=True)[:NUM_SHOWN]
+    while len(shown) < NUM_SHOWN:
+        artist = ARTISTS[rng.integers(len(ARTISTS))]   # any artist, at random
+        if artist not in shown:
+            shown.append(artist)
+    return shown, counts
+
+
+def random_five(counts, rng):
+    """The control: five different artists picked at random, in random order.
+
+    It ignores `counts` when it picks who to show, so every artist is equally likely to be
+    shown to every user. It shows the real download counts with the artists, so it returns
+    `counts` unchanged.
+    """
+    shuffled = list(ARTISTS)
+    rng.shuffle(shuffled)
+    return shuffled[:NUM_SHOWN], counts
+```
+
+Part 1 used `random_five`. Part 2 uses `top_five`.
+
+What can `top_five` do, and what are its limits? In other words, what does it show each user, and what can it never show? One sentence is enough.
+
+**User:**
+It shows the top five most downloaded artists, but its limiations include that it includes random artists UNTIL the list is full
+
+**Claude:**
+- 🔧 `Bash` — Show the Part 2 slots
+- 🔧 `Edit` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 2 slot "The capabilities and limitations of `top_five`": It shows the top five most downloaded artists, but its limiations include that it includes random artists UNTIL the list is full
+
+That matches the code as far as it goes. The code also does one more thing. Once five artists have a download, it stops adding random artists. After that it only shows those five, and an artist outside them is never shown again.
+
+What should go in the "What Claude corrected in your reading" slot? Use your own words, or say "nothing". One sentence is enough.
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
