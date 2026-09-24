@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*33 user turns. Tool outputs and reasoning omitted.*
+*34 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -524,5 +524,18 @@ Thanks. Now, would you like to change your rule? You get one change after the ru
 
 **User:**
 no
+
+**Claude:**
+What did you change in your rule, either at the hand check or after the run? If you changed nothing, say "nothing". This goes in the "What you changed" slot.
+
+**User:**
+nothing
+
+**Claude:**
+- 🔧 `Edit` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/logan/Documents/GitHub/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 3 slot "What you changed in your rule": nothing
+
+Next, compare your two figures with Figures 1 and 2 of the paper, which the README links. What do your two curves show against them? Talk about direction, not size. One or two sentences are enough.
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
