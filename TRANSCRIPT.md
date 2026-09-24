@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*43 user turns. Tool outputs and reasoning omitted.*
+*44 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -618,5 +618,11 @@ Fill with the artists in alphabetical order. Once five or more artists have a do
 
 **User:**
 it should show the top downloaded ones
+
+**Claude:**
+Last detail: should it show the real download counts with the artists, or something else? A word is enough.
+
+**User:**
+real download counts with the artists
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
