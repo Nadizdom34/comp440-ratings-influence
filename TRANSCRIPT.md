@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 13f887db-d608-459c-b779-5661694ee774 | 2026-09-24T18:56:20.844Z -->
 ## Session `13f887db` — 2026-09-24 18:56:20
 
-*40 user turns. Tool outputs and reasoning omitted.*
+*41 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -599,5 +599,15 @@ Here's a question to start from. What would you change about which artists `top_
 
 **User:**
 i would chanfge whih artists it shows, and for it not to allow random artists to be shown
+
+**Claude:**
+To pin this down: which artists should it show instead? And at the start of a world, when fewer than five artists have a download, what should fill the rest of the list? One line is enough.
+
+**User:**
+i think it should be chonrological order of song release should fill the rest of the list
+
+**Claude:**
+- 🔧 `Bash` — Read the artists, recommender template and README Part 4
+The model has no release dates. A recommender can only use the download counts so far and the list of eleven artists, which is in a fixed order in `artists.py`. With only that to go on, what should fill the rest of the list at the start of a world? One line is enough.
 
 <!-- end-session: 13f887db-d608-459c-b779-5661694ee774 -->
