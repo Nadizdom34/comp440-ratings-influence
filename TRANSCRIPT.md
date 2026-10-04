@@ -857,5 +857,7 @@ run fnial check and push
 **Claude:**
 - 🔧 `Skill` — checkpoint
 - 🔧 `Bash` — Run all parts and list missing items
+- 🔧 `Bash` — Dump transcript, check status and commit order
+- 🔧 `Bash` — Push commits to GitHub
 
 <!-- end-session: 54b7d10c-6098-4a4d-9aac-96c12e04061a -->
